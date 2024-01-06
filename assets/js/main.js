@@ -23,3 +23,13 @@ $(document).ready(function(){
       })
 });
 
+
+// counter
+$(document).ready(function(){
+    $('.counter').countUp(
+        {
+        delay: 5,
+        time: 1500
+        }
+    );
+})

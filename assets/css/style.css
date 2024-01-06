@@ -260,7 +260,7 @@ html,body{
 }
 .service-section .service-cards-sec{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 320px);
     gap: 30px 10px;
 }
@@ -395,6 +395,33 @@ footer .footer-address{
 }
 
 
+/* project section */
+.project-section{
+    padding: 0px 10px 100px;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 330px);
+    gap: 15px;
+}
+.project-box{
+    position: relative;
+}
+.project-box .project-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.project-details-box .project-name{
+    color: #002968;
+    font-family: 'Righteous', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 24px */
+    text-transform: capitalize;
+}
 /* about page */
 
 .banner-section{
@@ -408,4 +435,121 @@ footer .footer-address{
 }
 .about-para-description{
     text-align: center;
+}
+
+/* counter section */
+
+.counter-section .container{
+    background-image: url('../images/counter-section-img.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.counter-box .counter-num {
+    color: #002968;
+    text-align: center;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+.counter-box p{
+    color: #002968;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+/* mission vision section */
+.mission-vision-section{
+    padding: 100px 10px;
+}
+
+.mission-vision-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+.mission-vision-box .head{
+    color: #002968;
+    font-family: 'Righteous', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 24px */
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.mission-vision-box .desc{
+    color: #002968;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}
+
+.about-pg-sectors-section{
+    padding: 100px 10px 0;
+}
+
+.about-pg-client{
+    padding: 0px 10px 100px;
+}
+
+/* servie pg */
+.service-pg-section{
+    padding: 100px 10px;
+}
+.services-list{
+    margin: 50px 10px 20px;
+}
+.service-details-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 30px;
+}
+.service-details-box h4{
+    color: #002968;
+    font-family: 'Righteous', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 36px */
+    text-transform: capitalize;
+}
+.service-details-box p{
+    color: #002968;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}
+
+.inner-pg-cta-section .container{
+    background-image: url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 10px 100px 60px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.inner-pg-cta-section p{
+    width: 55%;
 }
