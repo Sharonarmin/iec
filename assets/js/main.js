@@ -3,12 +3,13 @@ $(document).ready(function(){
     $('.client-slider').owlCarousel({
         loop:true,
         margin:0,
-        nav:true,
+        nav:false,
         autoplay:true,
+        dots:false,
         navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
         responsive:{
             0:{
-                items:1
+                items:2
             },
             600:{
                 items:3
