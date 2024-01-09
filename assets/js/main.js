@@ -34,3 +34,26 @@ $(document).ready(function(){
         }
     );
 })
+
+// sticky navbar
+window.onscroll = ()=>{
+    makeSticky()
+}
+
+const navbar = document.querySelector('.iec-navbar');
+const sticky = 100
+const logo = document.querySelector('.main-logo')
+
+function makeSticky(){
+    if(window.pageYOffset >= sticky){
+        navbar.classList.add('fixed-navbar')
+        logo.classList.add('sticky-logo')
+        navbar.style.height = 'auto'
+    }else{
+        navbar.classList.remove('fixed-navbar')
+        logo.classList.remove('sticky-logo')
+    }
+}
+
+// aos
+AOS.init();

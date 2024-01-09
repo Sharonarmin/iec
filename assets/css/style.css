@@ -46,18 +46,42 @@ html,body{
 
 .iec-navbar{
     height: 100px;
-    padding: 10px;
+    padding: 5px;
+    transition: all .4s ease-in-out;
 }
-
+.home-nav{
+    background-color: #FFF;
+}
+.fixed-navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background-color .3s ease-in-out all .4s ease-in-out;
+    background-color: var(--white-col);
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
 
 .iec-navbar .navbar-brand img{
     padding: 10px;
+    width: 220px;
+    transition: all .4s ease-in-out;
+}
+.iec-navbar .navbar-brand .sticky-logo{
+    width: 200px ;
+    transition: all .4s ease-in-out;
 }
 .iec-navbar .nav-item .nav-link{
     color: var(--primary-col);
     font-size: 18px;
     font-weight: 500;
     padding-right: 40px;
+    transition: all .4s ease-in-out;
+}
+
+.hero-slider{
+    height: calc(100% - 100px);
+    width: 100%;
 }
 
 .hero{
@@ -182,7 +206,7 @@ html,body{
 
 
 .client-slider .item img{
-    width: 100px;
+    width: 170px;
 }
 
 
@@ -190,6 +214,7 @@ html,body{
 
 .about-section{
     padding: 100px 10px;
+    overflow: hidden;
 
 }
 
@@ -240,6 +265,7 @@ html,body{
 /* sectors section */
 
 .sectors-section{
+    overflow: hidden;
     padding: 10px 10px 100px;
 }
 .sectors-section .container{
@@ -270,6 +296,7 @@ html,body{
 
 /* cta section */
 .cta-section{
+    overflow: hidden;
     background-image: url('../images/cta-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -284,6 +311,7 @@ html,body{
 /* services section */
 
 .service-section{
+    overflow: hidden;
     padding: 100px 10px;
 }
 .service-section .service-cards-sec{
@@ -334,6 +362,7 @@ html,body{
 /* why choose */
 
 .why-choose-us-section{
+    overflow: hidden;
     padding: 10px 10px 100px;
 }
 
@@ -438,6 +467,7 @@ footer .footer-address{
 
 /* project section */
 .project-section{
+    overflow: hidden;
     padding: 0px 10px 100px;
 }
 .project-grid{
@@ -585,6 +615,7 @@ footer .footer-address{
 }
 .service-pg-section{
     padding: 100px 10px;
+    overflow: hidden;
 }
 .services-list{
     margin: 50px 10px 20px;
@@ -632,6 +663,7 @@ footer .footer-address{
     background-image: url('../images/banner/project-banner.png');
 }
 .project-pg-section{
+    overflow: hidden;
     padding: 100px 10px;
 }
 
@@ -784,6 +816,9 @@ footer .footer-address{
 /* ipad responsive */
 
 @media only screen and (max-width:999px){
+    .iec-navbar .navbar-brand img {
+        width: 180px;
+    }
     .hero-box{
         grid-template-columns: 1fr;
     }
@@ -866,6 +901,9 @@ footer .footer-address{
 
 /* mobile responsive */
 @media only screen and (max-width:767px){
+    .iec-navbar .navbar-brand img {
+        width: 160px;
+    }
     .sm-head{
         font-size: 16px;
     }
