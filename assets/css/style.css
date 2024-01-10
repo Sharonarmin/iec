@@ -38,18 +38,42 @@ html,body{
 
 .iec-navbar{
     height: 100px;
-    padding: 10px;
+    padding: 5px;
+    transition: all .4s ease-in-out;
 }
-
+.home-nav{
+    background-color: #FFF;
+}
+.fixed-navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background-color .3s ease-in-out all .4s ease-in-out;
+    background-color: var(--white-col);
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
 
 .iec-navbar .navbar-brand img{
     padding: 10px;
+    width: 220px;
+    transition: all .4s ease-in-out;
+}
+.iec-navbar .navbar-brand .sticky-logo{
+    width: 200px ;
+    transition: all .4s ease-in-out;
 }
 .iec-navbar .nav-item .nav-link{
     color: var(--primary-col);
     font-size: 18px;
     font-weight: 500;
     padding-right: 40px;
+    transition: all .4s ease-in-out;
+}
+
+.hero-slider{
+    height: calc(100% - 100px);
+    width: 100%;
 }
 
 .hero{
@@ -168,7 +192,7 @@ html,body{
 
 
 .client-slider .item img{
-    width: 100px;
+    width: 170px;
 }
 
 
@@ -176,6 +200,7 @@ html,body{
 
 .about-section{
     padding: 100px 10px;
+    overflow: hidden;
 
 }
 
@@ -226,6 +251,7 @@ html,body{
 /* sectors section */
 
 .sectors-section{
+    overflow: hidden;
     padding: 10px 10px 100px;
 }
 .sectors-section .container{
@@ -256,6 +282,7 @@ html,body{
 
 /* cta section */
 .cta-section{
+    overflow: hidden;
     background-image: url('../images/cta-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -270,6 +297,7 @@ html,body{
 /* services section */
 
 .service-section{
+    overflow: hidden;
     padding: 100px 10px;
 }
 .service-section .service-cards-sec{
@@ -320,6 +348,7 @@ html,body{
 /* why choose */
 
 .why-choose-us-section{
+    overflow: hidden;
     padding: 10px 10px 100px;
 }
 
@@ -424,6 +453,7 @@ footer .footer-address{
 
 /* project section */
 .project-section{
+    overflow: hidden;
     padding: 0px 10px 100px;
 }
 .project-grid{
@@ -571,6 +601,7 @@ footer .footer-address{
 }
 .service-pg-section{
     padding: 100px 10px;
+    overflow: hidden;
 }
 .services-list{
     margin: 50px 10px 20px;
@@ -618,6 +649,7 @@ footer .footer-address{
     background-image: url('../images/banner/project-banner.png');
 }
 .project-pg-section{
+    overflow: hidden;
     padding: 100px 10px;
 }
 
@@ -767,47 +799,157 @@ footer .footer-address{
     margin-bottom: 0;
 }
 
+/* ipad responsive */
 
-
-/* responsive */
-
-@media only screen and (max-width: 999px){
-    .hero{
-        height: auto;
+@media only screen and (max-width:999px){
+    .iec-navbar .navbar-brand img {
+        width: 180px;
     }
     .hero-box{
-        grid-template-columns:  1fr;
-    }
-    .hero-left{
-        order: 2;
-        padding-top: 50px;
-        
-    }
-    .hero-right{
-        order: 1;
-        padding: 50px 0;
-        display: flex;
-        justify-content: center;
+        grid-template-columns: 1fr;
     }
     .about-section .container{
         grid-template-columns: 1fr;
     }
-    .about-section .about-content{
-        padding-top: 50px;
+    .about-content{
+        padding-top: 30px;
     }
-    .cta-section {
+    .cta-section{
         padding: 80px 10px;
     }
     .cta-section p{
         padding-right: 5%;
     }
-    .why-choose-us-right{
-        display: flex;
-        justify-content: center;
-        padding-left: 0;
-        padding-top: 40px;
-    }
-    .project-grid {
+    .project-grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .client-section .container{
+        padding: 30px 10px;
+    }
+    .about-section .container .about-img{
+        padding-right: 0;
+    }
+    .footer-social-media{
+        margin-bottom: 40px;
+    }
+    .project-grid{
+        grid-template-rows: repeat(3, 280px);
+    }
+    .banner-section {
+        height: 40vh;
+    }
+    .counter-section .container{
+        padding: 40px;
+    }
+    .counter-box .counter-num {
+        font-size: 60px;
+    }
+    .service-details-box{
+        margin: 10px 0 30px;
+    }
+    .services-list img{
+        height: 380px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .inner-pg-cta-section p{
+        width: 95%;
+    }
+    .contact-form-section{
+        margin-top: -10vh;
+    }
+    .contact-form-box {
+        padding: 80px 50px;
+    }
+    .company-location{
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    .contact-form-map{
+        position: relative;
+        z-index: 11;
+    }
+    .blue-bg {
+        width: 0%;
+    }
+    .contact-form-box p{
+        margin-bottom: 15px;
+    }
+    .contact-form-section{
+        padding: 10px;
+    }
+    .navbar-collapse{
+        background-color: var(--white-col);
+    }
+
+}
+
+/* mobile responsive */
+@media only screen and (max-width:767px){
+    .iec-navbar .navbar-brand img {
+        width: 160px;
+    }
+    .sm-head{
+        font-size: 16px;
+    }
+    .lg-head{
+        font-size: 26px;
+    }
+    .lg-head span {
+        font-size: 26px;
+    }
+    .sectors-section .sector-box p{
+        font-size: 18px;
+    }
+    .cta-section p{
+        padding-right: 0;
+        margin: 20px 0;
+    }
+    .service-section .service-cards-sec{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 280px);
+        margin-top: 30px;
+        gap: 15px 10px;
+    }
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+    .iec-list-icon li::before {
+        height: 16px;
+        width: 16px;
+        left: -20px;
+    }
+    .project-grid{
+        grid-template-rows: repeat(6, 260px);
+    }
+    .sectors-section .container{
+        grid-template-columns: 1fr;
+    }
+    .services-list img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .services-list{
+        margin: 50px 0 20px;
+    }
+    .inner-pg-cta-section .container{
+        padding: 50px 10px;
+    }
+    .inner-pg-cta-section p{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .inner-pg-cta-section{
+        padding: 10px;
+    }
+    .contact-form-box{
+        padding: 50px 20px;
+    }
+    .contact-form-box h4 {
+        font-size: 34px;
+        margin-bottom: 20px;
     }
 }

@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- style -->
@@ -26,7 +28,7 @@
     <div class="banner-section contact-banner">
         <nav class="navbar iec-navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                <a class="navbar-brand" href="index.html"><img class="main-logo" src="assets/images/logo/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +60,7 @@
 
     <!-- contact form section -->
     <div class="contact-form-section">
-        <div class="container contact-form-box">
+        <div class="container contact-form-box" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
             <div class="contact-form-map">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
@@ -119,9 +121,9 @@
 
     <!-- company details section -->
     <div class="company-details-section">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 mt-4">
                     <div class="d-flex align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="37" height="30" viewBox="0 0 37 30" fill="none">
                             <path d="M23.7555 7.89412C23.7555 6.76095 23.1974 5.71235 22.2502 5.08657L15.4851 0.570812C14.3519 -0.190271 12.8636 -0.190271 11.7304 0.570812L4.96521 5.08657C4.035 5.71235 3.45996 6.76095 3.45996 7.89412V17.5007C3.45996 17.9742 3.83205 18.3463 4.30561 18.3463H22.9099C23.3834 18.3463 23.7555 17.9742 23.7555 17.5007V7.89412ZM13.6077 14.1181C11.9841 14.1181 10.648 12.782 10.648 11.1583C10.648 9.53468 11.9841 8.19855 13.6077 8.19855C15.2314 8.19855 16.5675 9.53468 16.5675 11.1583C16.5675 12.782 15.2314 14.1181 13.6077 14.1181Z" fill="#003B96"/>
@@ -133,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 mt-4">
                     <div class="d-flex align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="39" height="30" viewBox="0 0 39 30" fill="none">
                             <path d="M29.3999 0H10.3755C4.66816 0 0.863281 2.64706 0.863281 8.82353V21.1765C0.863281 27.3529 4.66816 30 10.3755 30H29.3999C35.1072 30 38.9121 27.3529 38.9121 21.1765V8.82353C38.9121 2.64706 35.1072 0 29.3999 0ZM30.294 10.7471L24.3394 15.1588C23.0838 16.0941 21.4857 16.5529 19.8877 16.5529C18.2896 16.5529 16.6725 16.0941 15.436 15.1588L9.48133 10.7471C9.19026 10.5229 9.00395 10.203 8.96139 9.85438C8.91884 9.50571 9.02335 9.15528 9.25304 8.87647C9.74767 8.31176 10.6418 8.20588 11.2506 8.66471L17.2052 13.0765C18.6511 14.1529 21.1052 14.1529 22.5511 13.0765L28.5057 8.66471C29.1145 8.20588 30.0277 8.29412 30.5033 8.87647C30.9979 9.44118 30.9028 10.2882 30.294 10.7471Z" fill="#002968"/>
@@ -144,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-4 col-md-6 col-12 mt-md-5 mt-4">
                     <div class="d-flex align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" fill="none">
                             <path d="M15.2628 19.425L12.3292 22.2C11.7108 22.785 10.7277 22.785 10.0934 22.215C9.91895 22.05 9.74452 21.9 9.5701 21.735C7.96657 20.208 6.48763 18.5683 5.14596 16.83C3.84568 15.12 2.79911 13.41 2.03796 11.715C1.29268 10.005 0.912109 8.37 0.912109 6.81C0.912109 5.79 1.10239 4.815 1.48297 3.915C1.86354 3 2.46611 2.16 3.30653 1.41C4.32139 0.465 5.43139 0 6.60482 0C7.04881 0 7.49281 0.0900001 7.88924 0.27C8.30153 0.45 8.66624 0.72 8.95167 1.11L12.6305 6.015C12.9159 6.39 13.1221 6.735 13.2648 7.065C13.4075 7.38 13.4868 7.695 13.4868 7.98C13.4868 8.34 13.3758 8.7 13.1538 9.045C12.9477 9.39 12.6464 9.75 12.2658 10.11L11.0607 11.295C10.8862 11.46 10.807 11.655 10.807 11.895C10.807 12.015 10.8228 12.12 10.8545 12.24C10.9021 12.36 10.9497 12.45 10.9814 12.54C11.2668 13.035 11.7584 13.68 12.4561 14.46C13.1697 15.24 13.9308 16.035 14.7554 16.83C14.9139 16.98 15.0884 17.13 15.2469 17.28C15.8812 17.865 15.8971 18.825 15.2628 19.425ZM32.5788 24.495C32.5767 25.0611 32.4413 25.6196 32.1823 26.13C31.9128 26.67 31.5639 27.18 31.1041 27.66C30.3271 28.47 29.4708 29.055 28.5035 29.43C28.4876 29.43 28.4718 29.445 28.4559 29.445C27.5204 29.805 26.5055 30 25.4114 30C23.7939 30 22.0655 29.64 20.2419 28.905C18.4184 28.17 16.5948 27.18 14.7871 25.935C14.1687 25.5 13.5502 25.065 12.9635 24.6L18.1488 19.695C18.5928 20.01 18.9892 20.25 19.3222 20.415C19.4015 20.445 19.4967 20.49 19.6077 20.535C19.7345 20.58 19.8614 20.595 20.0041 20.595C20.2737 20.595 20.4798 20.505 20.6542 20.34L21.8594 19.215C22.2558 18.84 22.6364 18.555 23.0011 18.375C23.3658 18.165 23.7305 18.06 24.1269 18.06C24.4282 18.06 24.7454 18.12 25.0942 18.255C25.4431 18.39 25.8078 18.585 26.2042 18.84L31.4529 22.365C31.8652 22.635 32.1506 22.95 32.3251 23.325C32.4836 23.7 32.5788 24.075 32.5788 24.495Z" fill="#002968"/>
@@ -161,7 +163,7 @@
     <!-- company details section end -->
 
     <!-- footer start -->
-    <footer>
+    <footer data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
@@ -234,6 +236,14 @@
     </footer>
     <!-- footer end -->
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
