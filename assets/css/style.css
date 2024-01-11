@@ -37,7 +37,7 @@ html,body{
 /* navbar */
 
 .iec-navbar{
-    height: 100px;
+    height: 90px;
     padding: 5px;
     transition: all .4s ease-in-out;
 }
@@ -72,12 +72,12 @@ html,body{
 }
 
 .hero-slider{
-    height: calc(100% - 100px);
+    height: calc(100% - 90px);
     width: 100%;
 }
 
 .hero{
-    height: calc(100% - 100px);
+    height: calc(100% - 90px);
     width: 100%;
     display: flex;
     align-items: center;
@@ -96,25 +96,42 @@ html,body{
 
 .hero-head{
     font-family: 'Righteous', sans-serif;
-    color: var(--primary-col);
+    color: var(--white-col);
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 0;
 }
 .hero-head span{
     position: relative;
+    font-family: 'Righteous', sans-serif;
+    color: var(--white-col);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 .hero-head span::before{
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('../images/hero-sm-icon.png');
-    width: 100px;
-    height: 40px;
+    top: -24px;
+    left: -2px;
+    background-image: url('../images/hero-slider-sm-icon.png');
+    width: 53px;
+    height: 53px;
     background-size: cover;
+    z-index: 11;
+}
+
+.slider-description .description{
+    color: var(--white-col);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    text-align: center;
 }
 .description{
     color: var(--primary-col);
@@ -156,6 +173,7 @@ html,body{
     font-size: 18px;
     font-weight: 500;
     display: inline-block;
+    white-space: nowrap;
 }
 .btn-2{
     padding: 10px 32px;
@@ -167,7 +185,7 @@ html,body{
     color: var(--primary-col);
     text-decoration: none;
     display: inline-block;
-
+    white-space: nowrap;
 
 }
 /* client section */
@@ -799,6 +817,32 @@ footer .footer-address{
     margin-bottom: 0;
 }
 
+/* hero slider */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+.slider-description{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+
+
+
 /* ipad responsive */
 
 @media only screen and (max-width:999px){
@@ -882,6 +926,24 @@ footer .footer-address{
     .navbar-collapse{
         background-color: var(--white-col);
     }
+    .hero-section{
+        height: auto;
+    }
+    .hero-slider{
+        height: auto;
+    }
+    .client-section{
+        margin-top: 50px;
+    }
+    .hero-head {
+        font-size: 34px;
+    }
+    .hero-head span{
+        font-size: 34px;
+    }
+    .slider-description .description{
+        display: none;
+    }
 
 }
 
@@ -951,5 +1013,20 @@ footer .footer-address{
     .contact-form-box h4 {
         font-size: 34px;
         margin-bottom: 20px;
+    }
+    .hero-head {
+        font-size: 26px;
+    }
+    .hero-head span{
+        font-size: 26px;
+    }
+    .btn-1{
+        font-size: 16px;
+        padding: 8px 25px;
+    }
+    .btn-2{
+        font-size: 16px;
+        padding: 8px 25px;
+
     }
 }
