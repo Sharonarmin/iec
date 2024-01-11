@@ -944,6 +944,13 @@ footer .footer-address{
     .slider-description .description{
         display: none;
     }
+    .swiper{
+        height: 70vh;
+    }
+    .swiper-slide img {
+        height: 70vh;
+        object-fit: cover;
+    }
 
 }
 
@@ -1028,5 +1035,15 @@ footer .footer-address{
         font-size: 16px;
         padding: 8px 25px;
 
+    }
+    .counter-section .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .counter-box{
+        margin-bottom: 20px;
+    }
+    .counter-box p{
+        margin-top: 0;
     }
 }
