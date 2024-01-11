@@ -38,7 +38,7 @@ html,body{
 
 .iec-navbar{
     height: 90px;
-    padding: 5px;
+    padding: 15px 5px;
     transition: all .4s ease-in-out;
 }
 .home-nav{
@@ -69,6 +69,22 @@ html,body{
     font-weight: 500;
     padding-right: 40px;
     transition: all .4s ease-in-out;
+}
+
+.iec-navbar .nav-item .contact-btn{
+    border-radius: 5px;
+    background: linear-gradient(90deg, #002968 0%, #003B96 100%);
+    box-shadow: 4px 4px 20px 0px rgba(0, 59, 150, 0.50);
+    color: var(--white-col) !important;
+    padding: 8px 25px;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url('../images/hamburger-btn.png');
+}
+.navbar-light .navbar-toggler{
+    border-style: none;
+    box-shadow: none;
 }
 
 .hero-slider{
@@ -842,6 +858,19 @@ footer .footer-address{
 }
 
 
+/* offcanvas navbar */
+
+.offcanvas-navbar{
+    padding-left: 0;
+}
+.offcanvas-navbar .nav-item{
+    list-style: none;
+    
+}
+.offcanvas-navbar .nav-item .nav-link{
+    font-size: 18px;
+    color: var(--primary-col);
+}
 
 /* ipad responsive */
 
@@ -958,6 +987,12 @@ footer .footer-address{
 @media only screen and (max-width:767px){
     .iec-navbar .navbar-brand img {
         width: 160px;
+    }
+    .main-logo{
+        width: 160px;
+    }
+    .iec-navbar .navbar-brand .sticky-logo{
+        width: 180px;
     }
     .sm-head{
         font-size: 16px;
