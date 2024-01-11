@@ -868,10 +868,13 @@ footer .footer-address{
     
 }
 .offcanvas-navbar .nav-item .nav-link{
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 10px;
     color: var(--primary-col);
 }
-
+.offcanvas-end {
+    width: 300px;
+}
 /* ipad responsive */
 
 @media only screen and (max-width:999px){
