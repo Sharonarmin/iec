@@ -1,3 +1,10 @@
+//   loader
+
+const loader = document.querySelector('.loader-div');
+window.addEventListener('load',()=>{
+    loader.style.display = 'none'
+})
+
 // client carousel
 $(document).ready(function(){
     $('.client-slider').owlCarousel({
@@ -75,3 +82,5 @@ var swiper = new Swiper(".mySwiper", {
         delay: 3000,
       },
   });
+
+
