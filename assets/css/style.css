@@ -1084,4 +1084,7 @@ footer .footer-address{
     .counter-box p{
         margin-top: 0;
     }
+    .client-slider .item img{
+        width: 130px;
+    }
 }
