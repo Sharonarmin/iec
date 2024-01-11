@@ -9,7 +9,7 @@ $(document).ready(function(){
         navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
         responsive:{
             0:{
-                items:3
+                items:2
             },
             600:{
                 items:3
