@@ -66,7 +66,7 @@ html,body{
 .iec-navbar .nav-item .nav-link{
     color: var(--primary-col);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     padding-right: 40px;
     transition: all .4s ease-in-out;
 }
@@ -85,6 +85,10 @@ html,body{
 .navbar-light .navbar-toggler{
     border-style: none;
     box-shadow: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    font-weight: 500;
 }
 
 .hero-slider{
@@ -190,6 +194,10 @@ html,body{
     font-weight: 500;
     display: inline-block;
     white-space: nowrap;
+}
+.btn-1:hover{
+    color: var(--white-col);
+    background: linear-gradient(87deg, #4872B1 4.2%, #002968 98.85%);
 }
 .btn-2{
     padding: 10px 32px;
@@ -332,7 +340,7 @@ html,body{
 
 .service-section{
     overflow: hidden;
-    padding: 100px 10px;
+    padding: 0px 10px 100px;
 }
 .service-section .service-cards-sec{
     display: grid;
@@ -383,7 +391,7 @@ html,body{
 
 .why-choose-us-section{
     overflow: hidden;
-    padding: 10px 10px 100px;
+    padding: 100px 10px 100px;
 }
 
 .iec-list-icon{
@@ -507,31 +515,42 @@ footer .footer-address{
     object-fit: cover;
 }
 .project-details-box{
-    padding: 20px 20px 5px;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.77) 15.61%, rgba(255, 255, 255, 0.92) 50.67%, #FFF 100%);
+    padding: 50px 20px 50px;
+    width: 88%;
+    visibility: hidden;
     position: absolute;
-    bottom: -100px;
-    left: 0;
-    transition: .4s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+    border-radius: 15px;
+    background: #FFF;
+    opacity: 0;
 }
 .project-box:hover .project-details-box{
-    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    
 }
 
 .project-details-box .project-name{
     color: #002968;
-    font-family: 'Righteous', sans-serif;
+    text-align: center;
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 100%; /* 24px */
     text-transform: capitalize;
-    margin-bottom: 10px;
 }
 .project-details-box .location{
-    color: var(--primary-col);
-    margin-bottom: 0;
+    color: #002968;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
 }
 .project-details-box .location i{
     font-size: 20px;
@@ -619,10 +638,11 @@ footer .footer-address{
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 20.8px */
+    padding: 0 10px;
 }
 
 .about-pg-sectors-section{
-    padding: 100px 10px 0;
+    padding: 100px 10px 100px;
 }
 
 .about-pg-client{
@@ -909,6 +929,28 @@ footer .footer-address{
     100%{transform: rotate(1turn)}
   }
 
+
+
+
+/* gallery page */
+.gallery-section{
+    padding: 100px 10px;
+}
+
+.gallery-section .container{
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);  
+    gap: 15px;
+}
+.gallery-box{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.gallery-box .thumb img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 
 
 /* ipad responsive */
