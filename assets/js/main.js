@@ -1,9 +1,11 @@
 //   loader
 
-const loader = document.querySelector('.loader-div');
-window.addEventListener('load',()=>{
-    loader.style.display = 'none'
+$(document).ready(function(){
+    setTimeout(()=>{
+        $('.loader-div').remove();
+    },1200)
 })
+
 
 // client carousel
 $(document).ready(function(){

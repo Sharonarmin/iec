@@ -1061,6 +1061,10 @@ footer .footer-address{
         height: 70vh;
         object-fit: cover;
     }
+    .gallery-section .container{
+        grid-template-columns: repeat(2,  1fr);  
+        gap: 10px;
+    }
 
 }
 
@@ -1164,5 +1168,9 @@ footer .footer-address{
     }
     .client-slider .item img{
         width: 130px;
+    }
+    .gallery-section .container{
+        grid-template-columns: repeat(1,  1fr);  
+        gap: 10px;
     }
 }
