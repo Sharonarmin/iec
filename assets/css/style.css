@@ -87,8 +87,9 @@ html,body{
     box-shadow: none;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
-    font-weight: 500;
+.navbar-light .navbar-nav .nav-link.active{
+    font-weight: 600;
+    color: var(--primary-col);
 }
 
 .hero-slider{
@@ -457,6 +458,12 @@ footer{
     text-decoration: none;
     margin-right: 15px;
 }
+.footer-social-media a svg{
+    transition: .5s ease-in-out;
+}
+.footer-social-media a svg:hover{
+    transform: scale(1.4);
+}
 footer .footer-link-head{
     color: var(--white-col);
     font-size: 22px;
@@ -469,18 +476,21 @@ footer .footer-links{
     color: var(--white-col);
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 130%; /* 23.4px */
     display: block;
     text-decoration: none;
     margin-bottom: 15px;
+    width: fit-content;
 }
-
+footer .footer-links:hover{
+    color: gainsboro;
+}
 footer .footer-address{
     color: var(--white-col);
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 110%;
 }
 .copyright{
@@ -490,6 +500,7 @@ footer .footer-address{
     font-weight: 400;
     line-height: 140%; /* 25.2px */
     text-align: center;
+    margin: 0;
 }
 
 
@@ -550,7 +561,8 @@ footer .footer-address{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 20.8px */
+    line-height: 130%;
+    margin: 0; /* 20.8px */
 }
 .project-details-box .location i{
     font-size: 20px;
@@ -574,6 +586,7 @@ footer .footer-address{
 }
 .about-para-description{
     text-align: center;
+    padding: 0 3%;
 }
 
 /* counter section */
@@ -660,12 +673,12 @@ footer .footer-address{
 .services-list{
     margin: 50px 10px 20px;
 }
+
 .service-details-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    margin-left: 30px;
 }
 .service-details-box h4{
     color: #002968;
@@ -933,6 +946,9 @@ footer .footer-address{
 
 
 /* gallery page */
+.gallery-banner{
+    background-image: url('../images/banner/gallery-banner.jpg');
+}
 .gallery-section{
     padding: 100px 10px;
 }
