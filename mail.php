@@ -17,10 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
 
         $mail->isSMTP();
-        $mail->Host = 'mail.iecuae.ae';
+        $mail->Host = '';
         $mail->SMTPAuth = true;
-        $mail->Username = 'info@iecuae.ae'; // Your Gmail address
-        $mail->Password = 'Shameer##12'; // Your Gmail password or app password
+        $mail->Username = ''; // Your Gmail address
+        $mail->Password = ''; // Your Gmail password or app password
         $mail->SMTPSecure = 'TLS'; // Use 'tls' or 'ssl'
         $mail->Port = 465; // Use 465 for SSL, 587 for TLS
 
